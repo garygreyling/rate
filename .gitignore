@@ -1,0 +1,12 @@
+.DS_Store
+log/*
+tmp/**/*
+tmp/*
+tmp/restart.txt
+config/database.yml
+db/*.sqlite3
+test/**/*
+public/system/attachments/**/*
+public/stylesheets/all.css
+
+
