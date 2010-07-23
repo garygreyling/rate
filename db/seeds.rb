@@ -5,3 +5,9 @@
 #   
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Major.create(:name => 'Daley', :city => cities.first)
+require 'ffaker'
+
+10.times do
+  name = Faker::Name.name.split(' ')
+  Referee.create(:first_name => name.first, :last_name => name.last)
+end

@@ -1,12 +1,13 @@
 class CreateReferees < ActiveRecord::Migration
   def self.up
+    puts 'here'
     create_table :referees do |t|
-      t.first_name :string
-      t.last_name :string
-      t.avatar_file_name :string
-      t.avatar_content_type :string
-      t.avatar_file_size :integer
-      t.avatar_updated_at :datetime
+      t.string :first_name
+      t.string :last_name
+      t.string :avatar_file_name
+      t.string :avatar_content_type
+      t.integer :avatar_file_size
+      t.datetime :avatar_updated_at
       t.timestamps
     end
   end
