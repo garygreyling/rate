@@ -1,8 +1,8 @@
 require 'capistrano/ext/multistage'
 set :stages, %w(staging production development)
-set :default_stage, "development"
+set :default_stage, "production"
 
-set :application, "chef"
+set :application, "rate"
 set :user, "p46649r7"
 set :domain, "66.84.0.136"
 
@@ -16,10 +16,10 @@ set :shared_path, "#{deploy_to}/shared"
 set :keep_releases, 2
 
 # Use Git source control
-set :scm_username, "gary@mpowered.co.za"                   #if http
-set :scm_password, "4s%G{8zCCp"
+set :scm_username, "greyling.gary@gmail.com"                   #if http
+set :scm_password, "kwlw07japp"
 set :scm, :git
-set :repository, "git@github.com:mpowered/chado.git"
+set :repository, "git@github.com:garygreyling/rate.git"
 set :branch, "chef"
 set :scm_verbose, true
 
